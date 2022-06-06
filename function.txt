@@ -1,0 +1,13 @@
+command_not_found_handler() { 
+	if [[ $1 == *".cpp" ]]
+	then
+		g++ $@ -std=c++17 -o out1 ;
+		echo $fg[red] "\n---------------------------\n";
+		echo $fg[yellow];
+		./out1;
+		echo $fg[red] "\n---------------------------\n";
+	else
+		echo "Command Not Found";
+		return 127;
+	fi
+}

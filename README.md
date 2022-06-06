@@ -1,5 +1,5 @@
 # onelineCPP
-zsh script for running c++ files by just typing their name
+zsh script for running c++ files from your terminal by just typing their name
 
 Instructions to run
 

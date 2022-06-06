@@ -4,7 +4,23 @@ zsh script for running c++ files by just typing their name
 Instructions to run
 
 1. Ensure that the linux shell is zsh by running echo $SHELL.If not change it to zsh.<br/>
-2.copy paste the contents of the file function.txt to the end of the ~/.zshrc file.<br/>
+2.copy paste the contents of the file function.txt or the below code block to the end of the ~/.zshrc file.<br/><br/><br/>
+```
+command_not_found_handler() { 
+	if [[ $1 == *".cpp" ]]
+	then
+		g++ $@ -std=c++17 -o out1 ;
+		echo $fg[red] "\n---------------------------\n";
+		echo $fg[yellow];
+		./out1;
+		echo $fg[red] "\n---------------------------\n";
+	else
+		echo "Command Not Found";
+		return 127;
+	fi
+}
+```
+<br/>
 3.Thats it!!<br/>
 4.Now run C++ files by just typing their name.<br/><br/>
 

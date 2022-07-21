@@ -4,7 +4,7 @@ zsh script for running c++ files from your terminal by just typing their name
 Instructions to run
 
 1. Ensure that the linux shell is zsh by running echo $SHELL.If not change it to zsh.<br/>
-2. copy paste the contents of the file function.txt or the below code block to the end of the ~/.zshrc file.<br/><br/><br/>
+2. copy paste the contents of the file function.txt or the below code block to the end of the ~/.zshrc file. Or if you are using a mac, clone the repo and the run the ```addToZsh.sh``` script by giving necessary permissions. <br/><br/>
 ```
 command_not_found_handler() { 
 	if [[ $1 == *".cpp" ]]
@@ -28,7 +28,7 @@ command_not_found_handler() {
 }
 ```
 <br/>
-3. Thats it!!<br/>
+3. Restart the terminal... Thats it!!<br/>
 4. Now run C++ files by just typing their name.<br/><br/>
 
 # See Sample

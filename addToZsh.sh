@@ -1,6 +1,6 @@
-#this will add the required function to zshrc file
+#this will add the required function to zshrc file, this script is intended for macos systems only
 
-if [ $SHELL== "/bin/zsh"]
+if [[ $SHELL == "/bin/zsh" ]]
 then
     echo "ZSH detected ✅";
     echo "Adding command_not_found_handler function to zshrc file 📝";
